@@ -419,16 +419,23 @@ function showNotification(message, type = 'info') {
 
 // Scroll Effects
 function initializeScrollEffects() {
-    // Smooth scrolling for anchor links
+    // Smooth scrolling for anchor links (robust fallback to top)
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const href = this.getAttribute('href');
+            // If href is just '#' or refers to top/home, scroll to top
+            if (!href || href === '#' || href === '#top' || href === '#home') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                return;
+            }
+
+            const target = document.querySelector(href);
             if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+                // Fallback: if target not found, scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             }
         });
     });
@@ -601,7 +608,7 @@ document.addEventListener('keydown', (e) => {
     
     // Arrow key navigation for sections
     if (e.altKey) {
-        const sections = ['home', 'about', 'skills', 'experience', 'projects', 'contact'];
+        const sections = ['home', 'about', 'formations', 'certifications', 'skills', 'experience', 'projects', 'contact'];
         const currentHash = window.location.hash.slice(1) || 'home';
         const currentIndex = sections.indexOf(currentHash);
         
