@@ -399,7 +399,7 @@ body {
 }
 
 .hero-subtitle-container {
-    margin-bottom: var(--space-6);
+    margin-bottom: calc(var(--space-6) / 2);
 }
 
 .hero-subtitle {
@@ -1247,6 +1247,36 @@ body {
 }
 
 .experience-card .tech-stack { margin-top: var(--space-4); }
+
+/* Badges for profile and experiences */
+.hero-badges {
+    display: flex;
+    gap: var(--space-2);
+    margin-top: var(--space-4);
+    flex-wrap: wrap;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: white;
+    box-shadow: var(--shadow-sm);
+}
+
+.badge-devops { background: linear-gradient(90deg,#4f46e5,#7c3aed); }
+.badge-cloud { background: linear-gradient(90deg,#06b6d4,#0ea5e9); }
+.badge-infra { background: linear-gradient(90deg,#f59e0b,#f97316); }
+.badge-expert { background: linear-gradient(90deg,#10b981,#059669); }
+.badge-automation { background: linear-gradient(90deg,#06b6d4,#06b6d4); }
+.badge-architect { background: linear-gradient(90deg,#8b5cf6,#06b6d4); }
+.badge-linux { background: linear-gradient(90deg,#111827,#374151); }
+
+.experience-badges { display:flex; gap:var(--space-2); margin:var(--space-2) 0; }
 
 
 .projects-filter {
