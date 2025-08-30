@@ -835,6 +835,27 @@ body {
     background: var(--bg-secondary);
 }
 
+/* Formations & Certifications */
+.formations, .certifications {
+    padding: var(--space-20) 0;
+    background: var(--bg-primary);
+}
+
+.formation-item, .cert-card {
+    background: var(--bg-card);
+    padding: var(--space-6);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(255,255,255,0.06);
+    margin-bottom: var(--space-6);
+}
+
+.certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-6);
+}
+
 .skills-container {
     position: relative;
 }
