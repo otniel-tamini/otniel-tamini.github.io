@@ -608,7 +608,7 @@ document.addEventListener('keydown', (e) => {
     
     // Arrow key navigation for sections
     if (e.altKey) {
-        const sections = ['home', 'about', 'formations', 'certifications', 'skills', 'experience', 'projects', 'contact'];
+        const sections = ['home', 'about', 'skills', 'experience', 'projects', 'contact'];
         const currentHash = window.location.hash.slice(1) || 'home';
         const currentIndex = sections.indexOf(currentHash);
         
