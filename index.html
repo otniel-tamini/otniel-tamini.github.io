@@ -217,112 +217,186 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Compétences techniques</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Cloud Platforms</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-aws"></i>
-                            <span>AWS</span>
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <div class="skill-category" data-category="cloud">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h3>Cloud Platforms</h3>
                         </div>
-                        <div class="skill-item">
-                            <i class="fab fa-microsoft"></i>
-                            <span>Azure</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-google"></i>
-                            <span>GCP</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Containerisation</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-docker"></i>
-                            <span>Docker</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-dharmachakra"></i>
-                            <span>Kubernetes</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-ship"></i>
-                            <span>Helm</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>CI/CD</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-jenkins"></i>
-                            <span>Jenkins</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-gitlab"></i>
-                            <span>GitLab CI</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub Actions</span>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="aws">
+                                <div class="skill-logo">
+                                    <i class="fab fa-aws"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">AWS</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="90"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="azure">
+                                <div class="skill-logo">
+                                    <i class="fab fa-microsoft"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Azure</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="85"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="gcp">
+                                <div class="skill-logo">
+                                    <i class="fab fa-google"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">GCP</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="75"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Infrastructure as Code</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fas fa-code"></i>
-                            <span>Terraform</span>
+                    
+                    <div class="skill-category" data-category="containers">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <h3>Containerization</h3>
                         </div>
-                        <div class="skill-item">
-                            <i class="fas fa-cogs"></i>
-                            <span>Ansible</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-cloud"></i>
-                            <span>CloudFormation</span>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="docker">
+                                <div class="skill-logo">
+                                    <i class="fab fa-docker"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Docker</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="95"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="kubernetes">
+                                <div class="skill-logo">
+                                    <i class="fas fa-dharmachakra"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Kubernetes</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="88"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="helm">
+                                <div class="skill-logo">
+                                    <i class="fas fa-ship"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Helm</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="80"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Monitoring</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fas fa-chart-line"></i>
-                            <span>Prometheus</span>
+                    
+                    <div class="skill-category" data-category="cicd">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3>CI/CD</h3>
                         </div>
-                        <div class="skill-item">
-                            <i class="fas fa-tachometer-alt"></i>
-                            <span>Grafana</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-search"></i>
-                            <span>ELK Stack</span>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="jenkins">
+                                <div class="skill-logo">
+                                    <i class="fab fa-jenkins"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Jenkins</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="85"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="gitlab">
+                                <div class="skill-logo">
+                                    <i class="fab fa-gitlab"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">GitLab CI</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="90"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="github">
+                                <div class="skill-logo">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">GitHub Actions</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="92"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Langages</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
+                    
+                    <div class="skill-category" data-category="iac">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Infrastructure as Code</h3>
                         </div>
-                        <div class="skill-item">
-                            <i class="fas fa-terminal"></i>
-                            <span>Bash</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-js"></i>
-                            <span>JavaScript</span>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="terraform">
+                                <div class="skill-logo">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Terraform</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="87"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="ansible">
+                                <div class="skill-logo">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Ansible</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="83"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="cloudformation">
+                                <div class="skill-logo">
+                                    <i class="fas fa-cloud"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">CloudFormation</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="78"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
