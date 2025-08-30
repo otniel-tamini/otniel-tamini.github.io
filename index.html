@@ -1,35 +1,54 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Otniel Tamini - Portfolio DevOps & Cloud</title>
+    <title>Otniel Tamini - DevOps & Cloud Engineer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Background Animation -->
+    <div class="background-animation">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+
+    <!-- Cursor Follower -->
+    <div class="cursor-follower"></div>
+    <div class="cursor-dot"></div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">Otniel Tamini</a>
+                <a href="#home">
+                    <span class="logo-text">Otniel</span>
+                    <span class="logo-accent">.</span>
+                </a>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Accueil</a>
+                    <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">À propos</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#skills" class="nav-link">Compétences</a>
+                    <a href="#skills" class="nav-link">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#experience" class="nav-link">Expérience</a>
+                    <a href="#experience" class="nav-link">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projets</a>
+                    <a href="#projects" class="nav-link">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
@@ -47,34 +66,73 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
+                <div class="hero-greeting">
+                    <span class="greeting-text">Hello, I'm</span>
+                </div>
                 <h1 class="hero-title">
-                    Bonjour, je suis <span class="highlight">Otniel Tamini</span>
+                    <span class="name-text">Otniel Tamini</span>
                 </h1>
-                <h2 class="hero-subtitle">Ingénieur DevOps & Cloud</h2>
+                <div class="hero-subtitle-container">
+                    <h2 class="hero-subtitle">
+                        <span class="subtitle-text">DevOps & Cloud Engineer</span>
+                        <span class="typing-cursor">|</span>
+                    </h2>
+                </div>
                 <p class="hero-description">
-                    Passionné par l'automatisation, l'infrastructure cloud et les pratiques DevOps modernes. 
-                    Je transforme les idées en solutions scalables et robustes.
+                    Passionate about automation, cloud infrastructure, and modern DevOps practices. 
+                    I transform ideas into scalable and robust solutions using cutting-edge technologies.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Me contacter</a>
-                    <a href="#projects" class="btn btn-secondary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <span>View My Work</span>
+                        <i class="fas fa-eye"></i>
+                    </a>
                 </div>
-                <div class="hero-social">
-                    <a href="#" class="social-link" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="social-link" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" class="social-link" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="3">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="10">0</span>
+                        <span class="stat-label">Cloud Deployments</span>
+                    </div>
                 </div>
             </div>
             <div class="hero-image">
-                <div class="image-placeholder">
-                    <i class="fas fa-user"></i>
+                <div class="image-container">
+                    <div class="image-border"></div>
+                    <div class="profile-image">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="floating-icon" data-tech="docker">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <div class="floating-icon" data-tech="aws">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <div class="floating-icon" data-tech="kubernetes">
+                            <i class="fas fa-dharmachakra"></i>
+                        </div>
+                        <div class="floating-icon" data-tech="python">
+                            <i class="fab fa-python"></i>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
             </div>
         </div>
     </section>
@@ -82,29 +140,73 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">À propos de moi</h2>
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>
-                        Ingénieur DevOps passionné avec une solide expérience dans l'automatisation des déploiements, 
-                        la gestion d'infrastructure cloud et l'optimisation des processus de développement.
-                    </p>
-                    <p>
-                        Je me spécialise dans la création de pipelines CI/CD robustes, la containerisation avec Docker et Kubernetes, 
-                        et la gestion d'infrastructure as code avec Terraform et Ansible.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Années d'expérience</span>
+                    <div class="text-reveal">
+                        <p class="about-intro">
+                            I'm a passionate DevOps Engineer with expertise in automating deployments, 
+                            managing cloud infrastructure, and optimizing development processes.
+                        </p>
+                    </div>
+                    <div class="text-reveal">
+                        <p>
+                            I specialize in building robust CI/CD pipelines, containerization with Docker and Kubernetes, 
+                            and infrastructure as code using Terraform and Ansible. My goal is to bridge the gap 
+                            between development and operations while ensuring scalability and reliability.
+                        </p>
+                    </div>
+                    <div class="skills-preview">
+                        <h4>Technologies I work with:</h4>
+                        <div class="tech-list">
+                            <span class="tech-item">AWS</span>
+                            <span class="tech-item">Docker</span>
+                            <span class="tech-item">Kubernetes</span>
+                            <span class="tech-item">Terraform</span>
+                            <span class="tech-item">Jenkins</span>
+                            <span class="tech-item">Python</span>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-label">Projets réalisés</span>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-controls">
+                                <span class="control red"></span>
+                                <span class="control yellow"></span>
+                                <span class="control green"></span>
+                            </div>
+                            <span class="file-name">devops_engineer.py</span>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Satisfaction client</span>
+                        <div class="code-content">
+                            <div class="code-line">
+                                <span class="line-number">1</span>
+                                <span class="code-text"><span class="keyword">class</span> <span class="class-name">DevOpsEngineer</span>:</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">2</span>
+                                <span class="code-text">    <span class="keyword">def</span> <span class="function">__init__</span>(self):</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">3</span>
+                                <span class="code-text">        self.name = <span class="string">"Otniel Tamini"</span></span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">4</span>
+                                <span class="code-text">        self.role = <span class="string">"DevOps Engineer"</span></span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">5</span>
+                                <span class="code-text">        self.skills = [<span class="string">"AWS"</span>, <span class="string">"Docker"</span>, <span class="string">"K8s"</span>]</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">6</span>
+                                <span class="code-text">        self.passion = <span class="string">"Automation"</span></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -363,15 +465,15 @@
                     <div class="contact-items">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>otniel.tamini@email.com</span>
+                            <span>otnieltamini@gmail.com</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <span>+33 X XX XX XX XX</span>
+                            <span>+226 64 45 85 14</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Paris, France</span>
+                            <span>Ouagadougou, Burkina Faso</span>
                         </div>
                     </div>
                 </div>
