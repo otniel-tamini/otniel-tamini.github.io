@@ -960,8 +960,9 @@ body {
 .timeline {
     position: relative;
     max-width: 900px;
+    width: 100%;
     margin: 0 auto;
-    padding-left: var(--space-8);
+    padding-left: calc(var(--space-8));
 }
 
 .timeline::before {
@@ -980,7 +981,8 @@ body {
     margin-bottom: var(--space-12);
     opacity: 0;
     transform: translateY(30px);
-    padding-left: var(--space-12);
+    /* don't force narrow padding on the item itself; use content margin to control flow */
+    padding-left: 0;
 }
 
 .timeline-item:nth-child(odd) {
@@ -2273,6 +2275,14 @@ body {
     padding: 2rem;
     border-radius: 12px;
     box-shadow: var(--shadow);
+    /* Give the content a comfortable margin away from the timeline marker and allow full width */
+    display: block;
+    margin-left: 60px;
+    width: auto;
+    max-width: calc(100% - 120px);
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
 }
 
 .timeline-content h3 {
@@ -2299,6 +2309,11 @@ body {
     color: var(--text-secondary);
     margin-bottom: 1rem;
     line-height: 1.6;
+    /* Prevent extremely narrow column wrapping */
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: anywhere;
+    max-width: 100%;
 }
 
 .timeline-content ul {
