@@ -12,11 +12,11 @@
 
 :root {
     /* Color System */
-    --primary-color: #6366f1;
-    --primary-dark: #4f46e5;
-    --primary-light: #818cf8;
-    --secondary-color: #06b6d4;
-    --accent-color: #f59e0b;
+    --primary-color: #0ea5a4; /* teal for cloud */
+    --primary-dark: #059669;
+    --primary-light: #34d399;
+    --secondary-color: #065f46; /* deep green accent */
+    --accent-color: #f59e0b; /* amber for highlights */
     --success-color: #10b981;
     --warning-color: #f59e0b;
     --error-color: #ef4444;
@@ -98,8 +98,8 @@
     
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    --gradient-secondary: linear-gradient(135deg, var(--accent-color) 0%, var(--warning-color) 100%);
-    --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-secondary: linear-gradient(135deg, var(--accent-color) 0%, #f97316 100%);
+    --gradient-hero: linear-gradient(135deg, #0ea5a4 0%, #059669 100%);
     --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
     
     /* Animations */
@@ -1268,7 +1268,7 @@ body {
     box-shadow: var(--shadow-sm);
 }
 
-.badge-devops { background: linear-gradient(90deg,#4f46e5,#7c3aed); }
+.badge-devops { background: linear-gradient(90deg,#059669,#0ea5a4); }
 .badge-cloud { background: linear-gradient(90deg,#06b6d4,#0ea5e9); }
 .badge-infra { background: linear-gradient(90deg,#f59e0b,#f97316); }
 .badge-expert { background: linear-gradient(90deg,#10b981,#059669); }
