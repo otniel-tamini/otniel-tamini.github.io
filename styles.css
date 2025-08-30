@@ -856,6 +856,34 @@ body {
     gap: var(--space-6);
 }
 
+/* Certifications styles */
+.cert-card.cert-feature {
+    display: flex;
+    gap: var(--space-6);
+    align-items: center;
+    padding: var(--space-6);
+    background: linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.75));
+    border-radius: 14px;
+    border: 1px solid rgba(0,0,0,0.04);
+}
+
+.cert-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+.cert-org { color: var(--gray-600); margin-top: 6px; }
+.cert-desc { color: var(--gray-600); margin-top: 8px; }
+.cert-link { color: var(--primary-color); font-weight: 600; }
+
 .skills-container {
     position: relative;
 }
