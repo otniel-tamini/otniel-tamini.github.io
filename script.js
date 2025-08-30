@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeContactForm();
     initializeParallax();
     initializeIntersectionObserver();
+    initializeCVDownload();
 });
 
 // Custom Cursor Effect
@@ -690,4 +691,58 @@ if ('serviceWorker' in navigator) {
                 console.log('SW registration failed: ', registrationError);
             });
     });
+}
+
+// CV Download functionality
+function initializeCVDownload() {
+    const cvLinks = document.querySelectorAll('a[href*="cv.pdf"], a[href*="CV.pdf"]');
+    
+    cvLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Check if file exists
+            fetch(this.href, { method: 'HEAD' })
+                .then(response => {
+                    if (response.ok) {
+                        showNotification('📄 CV download started! Thank you for your interest.', 'success');
+                        // Track download analytics if needed
+                        trackCVDownload();
+                    } else {
+                        e.preventDefault();
+                        showNotification('📋 CV will be available soon. Please contact me directly for now.', 'info');
+                    }
+                })
+                .catch(() => {
+                    e.preventDefault();
+                    showNotification('📋 CV will be available soon. Please use the contact form to reach out.', 'info');
+                });
+        });
+        
+        // Add hover effect to CV buttons
+        link.addEventListener('mouseenter', function() {
+            if (this.classList.contains('cv-download-btn') || this.classList.contains('nav-cv')) {
+                this.style.transform += ' scale(1.05)';
+            }
+        });
+        
+        link.addEventListener('mouseleave', function() {
+            if (this.classList.contains('cv-download-btn') || this.classList.contains('nav-cv')) {
+                this.style.transform = this.style.transform.replace(' scale(1.05)', '');
+            }
+        });
+    });
+}
+
+// Track CV downloads (for analytics)
+function trackCVDownload() {
+    const downloadTime = new Date().toISOString();
+    console.log(`📊 CV downloaded at: ${downloadTime}`);
+    
+    // You can integrate with analytics services here
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'cv_download', {
+            'event_category': 'engagement',
+            'event_label': 'CV Download',
+            'value': 1
+        });
+    }
 }

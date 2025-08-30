@@ -287,6 +287,27 @@ body {
     width: 100%;
 }
 
+.nav-cv {
+    background: var(--gradient-primary) !important;
+    color: white !important;
+    padding: var(--space-2) var(--space-4) !important;
+    border-radius: 20px !important;
+    font-weight: 600 !important;
+    transition: var(--transition-bounce) !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: var(--space-2) !important;
+}
+
+.nav-cv:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: var(--shadow-glow) !important;
+}
+
+.nav-cv::after {
+    display: none !important;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -383,9 +404,19 @@ body {
 }
 
 .hero-buttons {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-4);
     margin-bottom: var(--space-10);
+    max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    .hero-buttons {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        margin: 0 auto var(--space-10);
+    }
 }
 
 .btn {
@@ -425,6 +456,36 @@ body {
     background: var(--primary-color);
     color: white;
     transform: translateY(-3px);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--gray-700);
+    border: 2px solid var(--gray-300);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-outline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-secondary);
+    transition: left 0.3s ease;
+    z-index: -1;
+}
+
+.btn-outline:hover {
+    color: white;
+    border-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+.btn-outline:hover::before {
+    left: 0;
 }
 
 .hero-stats {
@@ -1249,6 +1310,48 @@ body {
 
 .highlight-item i {
     color: var(--primary-color);
+    font-size: var(--font-size-lg);
+}
+
+.cv-download-section {
+    margin-top: var(--space-8);
+    padding: var(--space-6);
+    background: var(--bg-secondary);
+    border-radius: 16px;
+    text-align: center;
+    border: 2px dashed var(--gray-300);
+    transition: var(--transition-base);
+}
+
+.cv-download-section:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.cv-download-section h4 {
+    color: var(--gray-700);
+    margin-bottom: var(--space-4);
+    font-size: var(--font-size-lg);
+}
+
+.cv-download-btn {
+    background: white !important;
+    color: var(--primary-color) !important;
+    border: 2px solid var(--primary-color) !important;
+    padding: var(--space-3) var(--space-6) !important;
+    font-weight: 600 !important;
+    font-size: var(--font-size-base) !important;
+    gap: var(--space-3) !important;
+}
+
+.cv-download-btn:hover {
+    background: var(--primary-color) !important;
+    color: white !important;
+    transform: translateY(-3px) !important;
+    box-shadow: var(--shadow-lg) !important;
+}
+
+.cv-download-btn i {
     font-size: var(--font-size-lg);
 }
 
