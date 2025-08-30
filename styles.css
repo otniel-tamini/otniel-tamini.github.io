@@ -1,5 +1,8 @@
 /* Modern Portfolio CSS - Advanced Design */
 
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -37,8 +40,28 @@
     --bg-card: rgba(255, 255, 255, 0.8);
     --bg-glass: rgba(255, 255, 255, 0.1);
     
-    /* Typography */
-    --font-primary: 'Poppins', sans-serif;
+    /* Typography Enhancements for IBM Plex Serif */
+.serif-italic {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.serif-emphasis {
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+.quote {
+    font-style: italic;
+    font-size: var(--font-size-xl);
+    color: var(--gray-700);
+    border-left: 4px solid var(--primary-color);
+    padding-left: var(--space-4);
+    margin: var(--space-6) 0;
+}
+
+/* Typography */
+    --font-primary: 'IBM Plex Serif', serif;
     --font-mono: 'JetBrains Mono', monospace;
     --font-size-xs: 0.75rem;
     --font-size-sm: 0.875rem;
@@ -94,10 +117,12 @@ html {
 
 body {
     font-family: var(--font-primary);
-    line-height: 1.6;
+    line-height: 1.7;
     color: var(--gray-800);
     background: var(--bg-primary);
     overflow-x: hidden;
+    font-weight: 400;
+    letter-spacing: 0.01em;
 }
 
 .container {
@@ -359,9 +384,10 @@ body {
 
 .hero-title {
     font-size: var(--font-size-6xl);
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: var(--space-6);
     line-height: 1.1;
+    letter-spacing: -0.02em;
 }
 
 .name-text {
@@ -379,10 +405,11 @@ body {
 .hero-subtitle {
     font-size: var(--font-size-2xl);
     color: var(--gray-600);
-    font-weight: 500;
+    font-weight: 400;
     display: flex;
     align-items: center;
     gap: var(--space-2);
+    font-style: italic;
 }
 
 .typing-cursor {
@@ -658,11 +685,12 @@ body {
 
 .section-title {
     font-size: var(--font-size-4xl);
-    font-weight: 700;
+    font-weight: 600;
     color: var(--gray-800);
     margin-bottom: var(--space-4);
     position: relative;
     display: inline-block;
+    letter-spacing: -0.01em;
 }
 
 .section-line {
@@ -696,13 +724,16 @@ body {
     font-size: var(--font-size-xl);
     color: var(--gray-700);
     margin-bottom: var(--space-6);
-    font-weight: 500;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.6;
 }
 
 .about-text p {
     color: var(--gray-600);
     margin-bottom: var(--space-6);
     line-height: 1.8;
+    font-size: var(--font-size-lg);
 }
 
 .skills-preview h4 {
