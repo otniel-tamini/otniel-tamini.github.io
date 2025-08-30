@@ -1201,6 +1201,54 @@ body {
     background: var(--bg-secondary);
 }
 
+/* Experiences Grid (match projects card style) */
+.experiences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: start;
+}
+
+.experience-card {
+    background: var(--bg-card);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: var(--space-6);
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+.experience-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-xl);
+}
+
+.experience-header h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-1);
+}
+
+.experience-header .company {
+    display: block;
+    color: var(--primary-color);
+    margin-bottom: var(--space-2);
+}
+
+.experience-header .timeline-date {
+    display: inline-block;
+    margin-bottom: var(--space-3);
+}
+
+.experience-body p {
+    color: var(--gray-600);
+    line-height: 1.7;
+    margin-bottom: var(--space-4);
+}
+
+.experience-card .tech-stack { margin-top: var(--space-4); }
+
+
 .projects-filter {
     display: flex;
     justify-content: center;
