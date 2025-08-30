@@ -704,112 +704,85 @@
                 <h2 class="section-title">Get In Touch</h2>
                 <div class="section-line"></div>
             </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-text">
-                        <h3>Let's Work Together</h3>
-                        <p>
-                            I'm always interested in new challenges and opportunities. 
-                            Whether you need help with cloud migration, DevOps implementation, 
-                            or infrastructure automation, let's discuss how I can help bring your ideas to life.
-                        </p>
-                        <div class="contact-highlights">
-                            <div class="highlight-item">
-                                <i class="fas fa-clock"></i>
-                                <span>Quick Response Time</span>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-handshake"></i>
-                                <span>Collaborative Approach</span>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-rocket"></i>
-                                <span>Results-Driven</span>
+
+            <div class="contact-grid">
+                <!-- Left: Info panel -->
+                <aside class="contact-panel">
+                    <div class="panel-top">
+                        <h3 class="panel-title">Let's build something reliable together</h3>
+                        <p class="panel-sub">Cloud-native infrastructure, automated delivery and resilient systems — reach out for hiring, consulting or collaborations.</p>
+                    </div>
+
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="card-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                            <div class="card-body">
+                                <div class="card-label">Email</div>
+                                <a href="mailto:otnieltamini@gmail.com" class="card-value">otnieltamini@gmail.com</a>
                             </div>
                         </div>
-                        <div class="cv-download-section">
-                            <h4>Want to know more about my background?</h4>
-                            <a href="assets/otniel-tamini-cv.pdf" class="btn btn-outline cv-download-btn" download="Otniel_Tamini_CV.pdf">
-                                <i class="fas fa-file-pdf"></i>
-                                <span>Download My CV</span>
-                            </a>
+
+                        <div class="contact-card">
+                            <div class="card-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+                            <div class="card-body">
+                                <div class="card-label">Phone</div>
+                                <a href="tel:+22664458514" class="card-value">+226 64 45 85 14</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="card-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+                            <div class="card-body">
+                                <div class="card-label">Location</div>
+                                <div class="card-value">Ouagadougou, Burkina Faso</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-detail">
-                                <span class="label">Email</span>
-                                <span class="value">otnieltamini@gmail.com</span>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-detail">
-                                <span class="label">Phone</span>
-                                <span class="value">+226 64 45 85 14</span>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-detail">
-                                <span class="label">Location</span>
-                                <span class="value">Ouagadougou, Burkina Faso</span>
-                            </div>
-                        </div>
-                        <div class="social-links">
-                            <a href="#" class="social-link" target="_blank" title="LinkedIn">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="#" class="social-link" target="_blank" title="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="social-link" target="_blank" title="Twitter">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="social-link" target="_blank" title="Medium">
-                                <i class="fab fa-medium"></i>
-                            </a>
+
+                    <div class="panel-cta">
+                        <a href="assets/otniel-tamini-cv.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-file-download" aria-hidden="true"></i>
+                            <span>Download CV</span>
+                        </a>
+                        <div class="social-compact">
+                            <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="#" class="social-link" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                </div>
-                
-                <div class="contact-form-container">
-                    <form class="contact-form">
+                </aside>
+
+                <!-- Right: Contact form -->
+                <div class="contact-form-wrap">
+                    <form class="contact-form" id="contactForm" novalidate>
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="name">Name</label>
+                                <label for="name">Full name</label>
                                 <input type="text" id="name" name="name" placeholder="Your full name" required>
-                                <div class="form-border"></div>
                             </div>
                             <div class="form-group">
-                                <label for="email">Email</label>
+                                <label for="email">Email address</label>
                                 <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
-                                <div class="form-border"></div>
                             </div>
                         </div>
+
                         <div class="form-group">
                             <label for="subject">Subject</label>
                             <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
-                            <div class="form-border"></div>
                         </div>
+
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Tell me about your project..." rows="6" required></textarea>
-                            <div class="form-border"></div>
+                            <textarea id="message" name="message" rows="6" placeholder="Briefly describe your project or question" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary submit-btn">
-                            <span class="btn-text">Send Message</span>
-                            <span class="btn-icon">
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn submit-btn">
                                 <i class="fas fa-paper-plane"></i>
-                            </span>
-                        </button>
+                                <span>Send Message</span>
+                            </button>
+                            <div class="form-note">Or email me directly at <a href="mailto:otnieltamini@gmail.com">otnieltamini@gmail.com</a></div>
+                        </div>
                     </form>
                 </div>
             </div>
