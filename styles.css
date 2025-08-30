@@ -959,52 +959,56 @@ body {
 
 .timeline {
     position: relative;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
+    padding-left: var(--space-8);
 }
 
 .timeline::before {
     content: '';
     position: absolute;
-    left: 50%;
+    left: 30px;
     top: 0;
     bottom: 0;
     width: 3px;
     background: var(--gradient-primary);
-    transform: translateX(-50%);
     border-radius: 2px;
 }
 
 .timeline-item {
     position: relative;
-    margin-bottom: var(--space-16);
+    margin-bottom: var(--space-12);
     opacity: 0;
     transform: translateY(30px);
+    padding-left: var(--space-12);
 }
 
 .timeline-item:nth-child(odd) {
-    text-align: right;
-    padding-right: calc(50% + var(--space-8));
+    text-align: left;
+    padding-right: 0;
 }
 
 .timeline-item:nth-child(even) {
     text-align: left;
-    padding-left: calc(50% + var(--space-8));
+    padding-left: var(--space-12);
 }
 
 .timeline-marker {
     position: absolute;
     top: 0;
+    left: 20px;
     width: 20px;
     height: 20px;
 }
 
 .timeline-item:nth-child(odd) .timeline-marker {
-    right: calc(50% - 10px);
+    right: auto;
+    left: 20px;
 }
 
 .timeline-item:nth-child(even) .timeline-marker {
-    left: calc(50% - 10px);
+    left: 20px;
+    right: auto;
 }
 
 .marker-dot {
@@ -1104,6 +1108,35 @@ body {
 
 /* Responsive adjustments for timeline header */
 @media (max-width: 768px) {
+    .timeline {
+        padding-left: var(--space-6);
+        max-width: 100%;
+    }
+    
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        padding-left: var(--space-8);
+        margin-bottom: var(--space-8);
+    }
+    
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: var(--space-8);
+        text-align: left;
+    }
+    
+    .timeline-marker {
+        left: 10px;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-marker,
+    .timeline-item:nth-child(even) .timeline-marker {
+        left: 10px;
+    }
+    
     .timeline-header {
         flex-direction: column;
         align-items: flex-start;
