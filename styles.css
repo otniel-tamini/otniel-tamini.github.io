@@ -121,10 +121,71 @@
     --ui-bg-elev-light: #ffffff;
     --ui-text-light: #0f172a;
     --ui-text-muted-light: #475569;
+    
+    /* --- Minimalist theme overrides --- */
+  --min-bg: #fafafa;
+  --min-surface: #ffffff;
+  --min-text: #0f172a;
+  --min-muted: #475569;
+  --min-border: #e2e8f0;
 }
 
 body.theme-dark { background: var(--ui-bg-page-dark); color: var(--ui-text-dark); }
 body.theme-light { background: var(--ui-bg-page-light); color: var(--ui-text-light); }
+
+/* Base */
+body { background: var(--min-bg); color: var(--min-text); }
+.section-header .section-title { letter-spacing: 0.02em; }
+
+/* Surfaces: flatten & border */
+.experience-card,
+.project-card,
+.cert-card,
+.contact-panel,
+.contact-form,
+.hero-card,
+.card,
+.timeline-item,
+.skill-card {
+  background: var(--min-surface) !important;
+  border: 1px solid var(--min-border) !important;
+  box-shadow: none !important;
+  border-radius: 12px !important;
+}
+
+/* Backdrop minimal */
+.resume-backdrop { background: var(--min-surface) !important; border: 1px solid var(--min-border) !important; border-radius: 14px !important; }
+
+/* Topbar & rail */
+.topbar { background: var(--min-surface) !important; border-bottom: 1px solid var(--min-border) !important; }
+.side-rail .rail-link { color: var(--min-muted); }
+.side-rail .rail-link.active { color: var(--min-text); }
+
+/* Buttons */
+.btn { background: var(--min-surface); color: var(--min-text); border: 1px solid var(--min-border); box-shadow: none; }
+.btn:hover { background: #f1f5f9; }
+.btn-primary { background: var(--accent-color); color: #111827; border-color: var(--accent-color); }
+
+/* Projects: cleaner look */
+.projects-grid { gap: 24px; }
+.project-image { background: #f8fafc !important; border: 1px solid var(--min-border) !important; }
+.project-overlay { background: transparent !important; opacity: 1 !important; align-items: flex-end; padding: 12px; }
+.overlay-content { background: rgba(255,255,255,0.85); border: 1px solid var(--min-border); border-radius: 10px; padding: 10px 12px; }
+.project-icon { color: var(--min-muted) !important; opacity: 1 !important; }
+
+/* Certifications */
+.cert-icon { background: transparent; color: #f59e0b; border: 1px solid var(--min-border); }
+
+/* Contact */
+.panel-title { letter-spacing: 0; }
+.panel-sub { color: var(--min-muted); }
+.card-body .card-value { color: var(--min-text); }
+.panel-cta .social-link { background: var(--min-surface); border: 1px solid var(--min-border); box-shadow: none; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
 
 /* Global Styles */
 html {

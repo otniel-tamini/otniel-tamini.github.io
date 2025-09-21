@@ -678,7 +678,7 @@ Built with ❤️ and modern web technologies
   try {
     const saved = localStorage.getItem('theme');
     if (saved === 'light') document.body.classList.add('theme-light');
-    else document.body.classList.add('theme-dark');
+        else document.body.classList.add('theme-light');
   } catch(e) {}
   function switchTheme() {
     if (document.body.classList.contains('theme-dark')) {
