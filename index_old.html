@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otniel Tamini - DevOps & Cloud Engineer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar: theme toggle, social icons, Hire Me -->
+    <header class="topbar" role="banner">
+        <button class="menu-btn" aria-label="Open menu"><i class="fas fa-bars" aria-hidden="true"></i></button>
+        <div class="topbar-center">
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon" aria-label="Medium"><i class="fab fa-medium"></i></a>
+        </div>
+        <div class="topbar-right">
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                <span class="toggle-track"><span class="toggle-thumb"></span></span>
+            </button>
+            <a href="#contact" class="btn hire-btn">Hire Me</a>
+        </div>
+    </header>
+
+    <!-- Left Side Rail Navigation -->
+    <nav class="side-rail" aria-label="Section navigation">
+        <ul>
+            <li><a href="#about" class="rail-link"><i class="fas fa-user"></i><span>About</span></a></li>
+            <li><a href="#projects" class="rail-link"><i class="fas fa-code"></i><span>Projects</span></a></li>
+            <li><a href="#certifications" class="rail-link"><i class="fas fa-id-badge"></i><span>Certs</span></a></li>
+            <li><a href="#contact" class="rail-link"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Central resume backdrop to simulate a single big card behind sections -->
+    <div class="resume-backdrop" aria-hidden="true"></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <span class="logo-text">Otniel</span>
+                    <span class="logo-accent">.</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                    <a href="assets/otniel-tamini-cv.pdf" class="nav-link nav-cv" download="Otniel_Tamini_CV.pdf">
+                        <i class="fas fa-download"></i> CV
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+                        </div>
+                    </div>
+
+                    <div class="about-languages">
+                        <h4>Languages</h4>
+                        <p>English (Fluent) • French (Native)</p>
+                    </div>
+                </div>
+                    <a href="assets/otniel-tamini-cv.pdf" class="nav-link nav-cv" download="Otniel_Tamini_CV.pdf">
+                        <i class="fas fa-download"></i> CV
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-greeting">
+                    <span class="greeting-text">Hello, I'm</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="name-text">Otniel Tamini</span>
+                </h1>
+                <div class="hero-subtitle-container">
+                    <h2 class="hero-subtitle">
+                        <span class="subtitle-text">DevOps & Cloud Engineer</span>
+                        <span class="typing-cursor">|</span>
+                    </h2>
+                </div>
+                <!-- Certifications (moved after Projects) -->
+
+                <!-- Skills Section -->
+                    <span class="badge badge-devops">DevOps</span>
+                    <span class="badge badge-cloud">Cloud</span>
+                    <span class="badge badge-infra">Infrastructure</span>
+                </div>
+                <p class="hero-description">
+                    DevOps & Cloud Engineer with a Bachelor’s in Network and Systems Technology and an AWS
+                    Certified Cloud Practitioner credential. Experienced in Linux administration, networking,
+                    and containerization with Docker and Kubernetes. I build CI/CD pipelines, automate
+                    infrastructure with Terraform and Ansible, and manage cloud resources on AWS with a
+                    focus on scalability, reliability and security.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <span>View My Work</span>
+                        <i class="fas fa-eye"></i>
+                    </a>
+                    <a href="assets/otniel-tamini-cv.pdf" class="btn btn-outline" download="Otniel_Tamini_CV.pdf">
+                        <span>Download CV</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="3">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="10">0</span>
+                        <span class="stat-label">Cloud Deployments</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="image-border"></div>
+                    <div class="profile-image">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="floating-icon" data-tech="docker">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <div class="floating-icon" data-tech="aws">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <div class="floating-icon" data-tech="kubernetes">
+                            <i class="fas fa-dharmachakra"></i>
+                        </div>
+                        <div class="floating-icon" data-tech="python">
+                            <i class="fab fa-python"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-reveal">
+                        <p class="about-intro">
+                            I'm a passionate DevOps Engineer with expertise in automating deployments, 
+                            managing cloud infrastructure, and optimizing development processes.
+                        </p>
+                    </div>
+                    <div class="text-reveal">
+                        <p>
+                            I specialize in building robust CI/CD pipelines, containerization with Docker and Kubernetes, 
+                            and infrastructure as code using Terraform and Ansible. My goal is to bridge the gap 
+                            between development and operations while ensuring scalability and reliability.
+                        </p>
+                    </div>
+                        <div class="skills-preview">
+                            <h4>Technologies & Tools I work with:</h4>
+                            <div class="tech-list">
+                                <span class="tech-item">Linux Administration</span>
+                                <span class="tech-item">Networking (DNS, DHCP, TCP/IP)</span>
+                                <span class="tech-item">Docker</span>
+                                <span class="tech-item">Kubernetes</span>
+                                <span class="tech-item">AWS (EC2, S3, IAM, VPC)</span>
+                                <span class="tech-item">Terraform</span>
+                                <span class="tech-item">Ansible</span>
+                                <span class="tech-item">Jenkins</span>
+                                <span class="tech-item">Git / GitLab</span>
+                                <span class="tech-item">CI/CD</span>
+                                <span class="tech-item">Prometheus & Grafana</span>
+                                <span class="tech-item">Bash / Python scripting</span>
+                            </div>
+                        </div>
+                        
+                </div>
+                <div class="about-visual">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-controls">
+                                <span class="control red"></span>
+                                <span class="control yellow"></span>
+                                <span class="control green"></span>
+                            </div>
+                            <span class="file-name">devops_engineer.py</span>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line"><span class="line-number">1</span><span class="code-text"><span class="keyword">class</span> <span class="class-name">DevOpsEngineer</span>:</span></div>
+                            <div class="code-line"><span class="line-number">2</span><span class="code-text">    <span class="keyword">def</span> <span class="function">__init__</span>(self):</span></div>
+                            <div class="code-line"><span class="line-number">3</span><span class="code-text">        self.name = <span class="string">"Otniel Tamini"</span></span></div>
+                            <div class="code-line"><span class="line-number">4</span><span class="code-text">        self.role = <span class="string">"DevOps Engineer"</span></span></div>
+                            <div class="code-line"><span class="line-number">5</span><span class="code-text">        self.skills = [<span class="string">"AWS"</span>, <span class="string">"Docker"</span>, <span class="string">"K8s"</span>]</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <div class="skill-category" data-category="cloud">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h3>Cloud Platforms</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="aws">
+                                <div class="skill-logo">
+                                    <i class="fab fa-aws"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">AWS</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="90"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="azure">
+                                <div class="skill-logo">
+                                    <i class="fab fa-microsoft"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Azure</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="85"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="gcp">
+                                <div class="skill-logo">
+                                    <i class="fab fa-google"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">GCP</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="75"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category" data-category="containers">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <h3>Containerization</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="docker">
+                                <div class="skill-logo">
+                                    <i class="fab fa-docker"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Docker</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="95"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="kubernetes">
+                                <div class="skill-logo">
+                                    <i class="fas fa-dharmachakra"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Kubernetes</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="88"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="helm">
+                                <div class="skill-logo">
+                                    <i class="fas fa-ship"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Helm</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="80"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category" data-category="cicd">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3>CI/CD</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="jenkins">
+                                <div class="skill-logo">
+                                    <i class="fab fa-jenkins"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Jenkins</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="85"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="gitlab">
+                                <div class="skill-logo">
+                                    <i class="fab fa-gitlab"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">GitLab CI</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="90"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="github">
+                                <div class="skill-logo">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">GitHub Actions</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="92"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category" data-category="iac">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Infrastructure as Code</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="terraform">
+                                <div class="skill-logo">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Terraform</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="87"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="ansible">
+                                <div class="skill-logo">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Ansible</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="83"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="cloudformation">
+                                <div class="skill-logo">
+                                    <i class="fas fa-cloud"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <span class="skill-name">CloudFormation</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="78"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline-container">
+                <div class="experiences-grid">
+                    <!-- Switch Maker -->
+                    <div class="experience-card" data-aos="fade-up">
+                        <div class="experience-header">
+                            <h3>DevOps Junior Engineer</h3>
+                            <span class="company">Switch Maker</span>
+                            <div class="experience-badges">
+                                <span class="badge badge-devops">DevOps</span>
+                                <span class="badge badge-cloud">Cloud</span>
+                                <span class="badge badge-infra">Infrastructure</span>
+                            </div>
+                            <span class="timeline-date">March 2025 - Present</span>
+                        </div>
+                        <div class="experience-body">
+                            <p>Working on Linux administration, containerization, and supporting CI/CD pipelines while contributing to automation and cloud deployments for company services.</p>
+                            <ul class="achievements">
+                                <li><i class="fas fa-check-circle"></i> Supporting deployment automation and container workflows</li>
+                                <li><i class="fas fa-check-circle"></i> Participating in cloud resource management and monitoring</li>
+                                <li><i class="fas fa-check-circle"></i> Assisting with incident response and system hardening</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Linux</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Kubernetes</span>
+                                <span class="tech-tag">Jenkins</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Merradis Burkina -->
+                    <div class="experience-card" data-aos="fade-up">
+                        <div class="experience-header">
+                            <h3>Network & Systems Intern</h3>
+                            <span class="company">Merradis Burkina</span>
+                            <div class="experience-badges">
+                                <span class="badge badge-network">Networking</span>
+                                <span class="badge badge-sysadmin">Systems</span>
+                            </div>
+                            <span class="timeline-date">Dec 2024 - Feb 2025</span>
+                        </div>
+                        <div class="experience-body">
+                            <p>Installed and configured network services to support company operations and assisted with system administration and monitoring.</p>
+                            <ul class="achievements">
+                                <li><i class="fas fa-check-circle"></i> Installed and configured core network services</li>
+                                <li><i class="fas fa-check-circle"></i> Supported system administration tasks and monitoring</li>
+                                <li><i class="fas fa-check-circle"></i> Contributed to improving performance and security</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">DNS</span>
+                                <span class="tech-tag">DHCP</span>
+                                <span class="tech-tag">Monitoring</span>
+                                <span class="tech-tag">Linux</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Dawn University -->
+                    <div class="experience-card" data-aos="fade-up">
+                        <div class="experience-header">
+                            <h3>Network & Systems Intern</h3>
+                            <span class="company">New Dawn University</span>
+                            <div class="experience-badges">
+                                <span class="badge badge-education">Education</span>
+                                <span class="badge badge-linux">Linux</span>
+                            </div>
+                            <span class="timeline-date">Apr 2024 - Jun 2024</span>
+                        </div>
+                        <div class="experience-body">
+                            <p>Assisted in the administration and maintenance of Linux and Windows servers, and configured core network services supporting the university infrastructure.</p>
+                            <ul class="achievements">
+                                <li><i class="fas fa-check-circle"></i> Administered Linux/Windows servers and network services (DNS, DHCP, Apache)</li>
+                                <li><i class="fas fa-check-circle"></i> Contributed to technical documentation for final-year project</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Linux</span>
+                                <span class="tech-tag">Apache</span>
+                                <span class="tech-tag">DNS</span>
+                                <span class="tech-tag">DHCP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="cloud">Cloud</button>
+                <button class="filter-btn" data-filter="devops">DevOps</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="cloud devops">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3 class="overlay-title">AWS Cloud Migration</h3>
+                                <p class="overlay-desc">On-prem → AWS using Terraform & Ansible for automated provisioning and secure configuration.</p>
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link" title="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AWS Cloud Migration</h3>
+                        <p>Complete infrastructure migration from on-premise to AWS cloud using Terraform and Ansible for automated provisioning and configuration management.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Terraform</span>
+                            <span class="tech-tag">Ansible</span>
+                            <span class="tech-tag">CloudFormation</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">50+</span>
+                                <span class="stat-label">Services Migrated</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">60%</span>
+                                <span class="stat-label">Cost Reduction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="devops automation">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3 class="overlay-title">Kubernetes Multi-Environment Cluster</h3>
+                                <p class="overlay-desc">Multi-environment K8s with monitoring, RBAC and autoscaling for production workloads.</p>
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link" title="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-dharmachakra"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Kubernetes Multi-Environment Cluster</h3>
+                        <p>Production-ready Kubernetes cluster setup with multi-environment support, advanced monitoring, and automated scaling capabilities.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">Helm</span>
+                            <span class="tech-tag">Prometheus</span>
+                            <span class="tech-tag">Grafana</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">99.9%</span>
+                                <span class="stat-label">Uptime</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">100+</span>
+                                <span class="stat-label">Pods Managed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="devops automation">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3 class="overlay-title">Advanced CI/CD Pipeline</h3>
+                                <p class="overlay-desc">Pipeline with testing, security scanning, and safe rollbacks across environments.</p>
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link" title="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Advanced CI/CD Pipeline</h3>
+                        <p>Comprehensive DevOps pipeline with automated testing, security scanning, deployment, and rollback capabilities across multiple environments.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Jenkins</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">SonarQube</span>
+                            <span class="tech-tag">GitLab CI</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">80%</span>
+                                <span class="stat-label">Faster Deployments</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">Zero</span>
+                                <span class="stat-label">Downtime</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="cloud automation">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3 class="overlay-title">Infrastructure Monitoring Stack</h3>
+                                <p class="overlay-desc">ELK + Prometheus + Grafana for full-stack observability and alerting.</p>
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link" title="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Infrastructure Monitoring Stack</h3>
+                        <p>Complete monitoring and observability solution using ELK stack, Prometheus, and Grafana for comprehensive infrastructure insights.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">ELK Stack</span>
+                            <span class="tech-tag">Prometheus</span>
+                            <span class="tech-tag">Grafana</span>
+                            <span class="tech-tag">AlertManager</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">24/7</span>
+                                <span class="stat-label">Monitoring</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">1000+</span>
+                                <span class="stat-label">Metrics Tracked</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section (moved before Contact) -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Certifications</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card cert-feature">
+                    <div class="cert-card-left">
+                        <div class="cert-icon">
+                            <i class="fab fa-aws" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="cert-card-right">
+                        <h3>AWS Certified Cloud Practitioner</h3>
+                        <p class="cert-org">Amazon Web Services — December 2024</p>
+                        <p class="cert-desc">Foundational certification validating knowledge of AWS Cloud concepts, services, and basic architecture.</p>
+                        <p><a href="https://www.credly.com/badges/bdf98be9-cb58-4e88-937f-5edc446d0392/public_url" target="_blank" class="cert-link">View Credly badge</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Left: Info panel -->
+                <aside class="contact-panel">
+                    <div class="panel-top">
+                        <h3 class="panel-title">Let's build something reliable together</h3>
+                        <p class="panel-sub">Cloud-native infrastructure, automated delivery and resilient systems — reach out for hiring, consulting or collaborations.</p>
+                    </div>
+
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="card-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                            <div class="card-body">
+                                <div class="card-label">Email</div>
+                                <a href="mailto:otnieltamini@gmail.com" class="card-value">otnieltamini@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="card-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+                            <div class="card-body">
+                                <div class="card-label">Phone</div>
+                                <a href="tel:+22664458514" class="card-value">+226 64 45 85 14</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="card-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+                            <div class="card-body">
+                                <div class="card-label">Location</div>
+                                <div class="card-value">Ouagadougou, Burkina Faso</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-cta">
+                        <a href="assets/otniel-tamini-cv.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-file-download" aria-hidden="true"></i>
+                            <span>Download CV</span>
+                        </a>
+                        <div class="social-compact">
+                            <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="#" class="social-link" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Right: Contact form -->
+                <div class="contact-form-wrap">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full name</label>
+                                <input type="text" id="name" name="name" placeholder="Your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Briefly describe your project or question" required></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>Send Message</span>
+                            </button>
+                            <div class="form-note">Or email me directly at <a href="mailto:otnieltamini@gmail.com">otnieltamini@gmail.com</a></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-text">Otniel</span>
+                        <span class="logo-accent">.</span>
+                    </div>
+                    <p class="footer-description">
+                        Building the future of cloud infrastructure, one deployment at a time.
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Otniel Tamini. All rights reserved. Built with ❤️ and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

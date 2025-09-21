@@ -1,0 +1,137 @@
+# CV - Otniel Tamini
+## Ingénieur DevOps | Architecte Cloud | Expert en Automatisation
+
+**Email:** otnieltamini@gmail.com  
+**Téléphone:** +226 64 45 85 14  
+**Localisation:** Ouagadougou, Burkina Faso  
+**LinkedIn:** [linkedin.com/in/otniel-tamini](https://linkedin.com/in/otniel-tamini)  
+**GitHub:** [github.com/otniel-tamini](https://github.com/otniel-tamini)
+
+---
+
+## 🎯 PROFIL PROFESSIONNEL
+
+Ingénieur DevOps passionné avec 5+ ans d'expérience dans la conception, l'implémentation et l'optimisation d'infrastructures cloud natives. Expert en automatisation des processus CI/CD, conteneurisation, et observabilité. Spécialisé dans la transformation digitale et l'amélioration continue des performances système.
+
+---
+
+## 💼 EXPÉRIENCE PROFESSIONNELLE
+
+### **Ingénieur DevOps Senior** | *Switch Maker* | 2023 - Présent
+- Conception et déploiement d'architectures cloud natives sur AWS/Azure/GCP
+- Implémentation de pipelines CI/CD avec Jenkins, GitLab CI et GitHub Actions
+- Orchestration de conteneurs avec Kubernetes et Docker Swarm
+- Automatisation de l'infrastructure avec Terraform et Ansible
+- Mise en place de monitoring et observabilité (Prometheus, Grafana, ELK Stack)
+- **Résultats:** 75% de réduction du temps de déploiement, 99.9% de disponibilité
+
+### **Ingénieur Système** | *Merradis Burkina* | 2021 - 2023
+- Administration de systèmes Linux (Ubuntu, CentOS, RHEL)
+- Gestion de bases de données MySQL, PostgreSQL, MongoDB
+- Implémentation de solutions de sauvegarde et disaster recovery
+- Monitoring des performances système et optimisation
+- Support technique niveau 3 et résolution d'incidents critiques
+- **Résultats:** 40% d'amélioration des performances système
+
+### **Développeur Full-Stack** | *New Dawn University* | 2019 - 2021
+- Développement d'applications web avec JavaScript, Python, PHP
+- Intégration continue et déploiement automatisé
+- Gestion de versions avec Git et méthodologies Agile
+- Conception de bases de données et APIs RESTful
+- **Résultats:** Livraison de 15+ applications web en production
+
+---
+
+## 🛠 COMPÉTENCES TECHNIQUES
+
+### **Outils DevOps**
+- **Conteneurisation:** Docker, Kubernetes, Docker Compose, Helm
+- **CI/CD:** Jenkins, GitLab CI, GitHub Actions, Azure DevOps
+- **Infrastructure as Code:** Terraform, Ansible, CloudFormation
+- **Monitoring:** Prometheus, Grafana, ELK Stack, Nagios, Zabbix
+
+### **Plateformes Cloud**
+- **AWS:** EC2, S3, EKS, RDS, Lambda, CloudWatch, IAM
+- **Azure:** Virtual Machines, AKS, Azure Storage, Azure Monitor
+- **GCP:** Compute Engine, GKE, Cloud Storage, Stackdriver
+
+### **Programmation & Scripting**
+- **Langages:** Python, Bash, JavaScript, Go, Java
+- **Frameworks:** Django, Flask, Node.js, React
+- **Bases de données:** MySQL, PostgreSQL, MongoDB, Redis
+- **Outils:** Git, Jira, Confluence, SonarQube
+
+### **Systèmes & Réseaux**
+- **OS:** Linux (Ubuntu, CentOS, RHEL), Windows Server
+- **Réseaux:** TCP/IP, DNS, Load Balancing, VPN, Firewall
+- **Sécurité:** SSL/TLS, OAuth, LDAP, Vulnerability Assessment
+
+---
+
+## 🎓 FORMATION
+
+### **Master en Informatique & Télécommunications**
+*Université Privée de Ouagadougou* | 2017 - 2019
+
+### **Licence en Informatique**
+*Université de Ouagadougou* | 2014 - 2017
+
+---
+
+## 🏆 CERTIFICATIONS
+
+### **Obtenues**
+- **AWS Certified Cloud Practitioner** (2024)
+- **ITIL Foundation** (2023)
+- **Linux Professional Institute (LPIC-1)** (2022)
+
+### **En cours / Prévues**
+- **Certified Kubernetes Administrator (CKA)** - En préparation
+- **AWS Solutions Architect Associate** - Planifiée 2025
+- **Docker Certified Associate** - Planifiée 2025
+
+---
+
+## 🚀 PROJETS REMARQUABLES
+
+### **Pipeline CI/CD Multi-Cloud** (2024)
+- Architecture hybride supportant AWS, Azure et GCP
+- Déploiement automatisé avec rollback intelligent
+- Monitoring en temps réel et alerting proactif
+- **Technologies:** Jenkins, Terraform, Docker, Kubernetes
+- **Impact:** 75% de réduction du temps de déploiement
+
+### **Infrastructure Kubernetes Auto-Scalable** (2023)
+- Cluster haute disponibilité avec auto-scaling
+- Gestion automatique des certificats SSL
+- Backup automatisé et disaster recovery
+- **Technologies:** Kubernetes, Helm, Terraform, AWS EKS
+- **Impact:** Gestion de 500+ pods, 40% d'économies coûts
+
+### **Stack d'Observabilité Complète** (2023)
+- Monitoring 24/7 avec alerting intelligent
+- Dashboards personnalisés et métriques business
+- Logging centralisé et analyse de logs
+- **Technologies:** Prometheus, Grafana, ELK Stack
+- **Impact:** 95% de réduction des alertes parasites
+
+---
+
+## 🌍 LANGUES
+
+- **Français:** Natif
+- **Anglais:** Courant (B2-C1)
+- **Mooré:** Natif
+
+---
+
+## 🎨 CENTRES D'INTÉRÊT
+
+- **Technologie:** Veille technologique, open source, nouvelles architectures cloud
+- **Formation:** Mentorat d'équipes junior, conférences techniques
+- **Innovation:** Automatisation de processus, optimisation de performances
+- **Communauté:** Contributions open source, participation à des meetups DevOps
+
+---
+
+*Ce CV a été généré le 15 janvier 2025. Version numérique disponible sur [otniel-tamini.github.io](https://otniel-tamini.github.io)*
