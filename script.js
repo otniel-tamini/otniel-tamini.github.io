@@ -672,6 +672,41 @@ console.log(`
 Built with ❤️ and modern web technologies
 `);
 
+// --- Inspired UI additions: theme toggle & rail highlight ---
+(function(){
+  const themeToggle = document.getElementById('themeToggle');
+  try {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'light') document.body.classList.add('theme-light');
+    else document.body.classList.add('theme-dark');
+  } catch(e) {}
+  function switchTheme() {
+    if (document.body.classList.contains('theme-dark')) {
+      document.body.classList.remove('theme-dark');
+      document.body.classList.add('theme-light');
+      try { localStorage.setItem('theme', 'light'); } catch(e) {}
+    } else {
+      document.body.classList.remove('theme-light');
+      document.body.classList.add('theme-dark');
+      try { localStorage.setItem('theme', 'dark'); } catch(e) {}
+    }
+  }
+  if (themeToggle) themeToggle.addEventListener('click', switchTheme);
+
+  // Side rail active link highlight on scroll
+  const railLinks = document.querySelectorAll('.side-rail .rail-link');
+  const sectionIds = Array.from(railLinks).map(a => a.getAttribute('href')?.replace('#','')).filter(Boolean);
+  const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
+  function onScroll() {
+    const scrollPos = window.scrollY + 120;
+    let activeId = sections.length ? sections[0].id : null;
+    sections.forEach(sec => { if (sec && sec.offsetTop <= scrollPos) activeId = sec.id; });
+    railLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + activeId));
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+
 // Theme toggler (for future implementation)
 function initializeThemeToggler() {
     const themeToggle = document.querySelector('.theme-toggle');
