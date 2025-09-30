@@ -63,6 +63,24 @@
     </header>
 
     <section class="hero section" id="home">
+                <!-- pipeline animation restored as hero background -->
+                <div class="pipeline-animation hero-bg" aria-hidden="true">
+                    <div class="pipeline-line"></div>
+                    <div class="pipeline-nodes">
+                        <div class="node active" data-stage="build">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <div class="node" data-stage="test">
+                            <i class="fas fa-vial"></i>
+                        </div>
+                        <div class="node" data-stage="deploy">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="node" data-stage="monitor">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                </div>
             <div class="hero__content container">
                 <div class="hero__text">
                     <h1 class="hero__title">
@@ -830,24 +848,7 @@
                     <i class="fas fa-chevron-up"></i>
                 </button>
                 
-                <!-- pipeline animation moved here from header -->
-                <div class="pipeline-animation">
-                    <div class="pipeline-line"></div>
-                    <div class="pipeline-nodes">
-                        <div class="node active" data-stage="build">
-                            <i class="fas fa-hammer"></i>
-                        </div>
-                        <div class="node" data-stage="test">
-                            <i class="fas fa-vial"></i>
-                        </div>
-                        <div class="node" data-stage="deploy">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <div class="node" data-stage="monitor">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                    </div>
-                </div>
+                <!-- pipeline animation removed from footer (restored to hero background) -->
             </div>
         </div>
     </footer>
