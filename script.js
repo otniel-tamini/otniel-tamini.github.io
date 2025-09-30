@@ -487,7 +487,7 @@ class ContactForm {
     // Required field validation
     if (input.hasAttribute('required') && !value) {
       isValid = false;
-      errorMessage = 'Ce champ est requis.';
+      errorMessage = 'This field is required.';
     }
     
     // Email validation
@@ -495,14 +495,14 @@ class ContactForm {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(value)) {
         isValid = false;
-        errorMessage = 'Veuillez entrer une adresse email valide.';
+        errorMessage = 'Please enter a valid email address.';
       }
     }
     
     // Message length validation
     else if (name === 'message' && value && value.length < 10) {
       isValid = false;
-      errorMessage = 'Le message doit contenir au moins 10 caractères.';
+      errorMessage = 'Message must be at least 10 characters.';
     }
     
     this.displayFieldError(input, isValid, errorMessage);
@@ -636,15 +636,15 @@ class CVDownloadManager {
       if (response.ok) {
         // File exists, allow download
         this.trackDownload(url);
-        this.showNotification('Téléchargement du CV en cours...', 'success');
+  this.showNotification('CV download started...', 'success');
       } else {
         // File doesn't exist
         e.preventDefault();
-        this.showNotification('CV temporairement indisponible. Veuillez réessayer plus tard.', 'error');
+  this.showNotification('CV temporarily unavailable. Please try again later.', 'error');
       }
     } catch (error) {
       e.preventDefault();
-      this.showNotification('Erreur lors du téléchargement. Veuillez réessayer.', 'error');
+  this.showNotification('Download error. Please try again.', 'error');
     }
   }
 
