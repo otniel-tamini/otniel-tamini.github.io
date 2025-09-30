@@ -431,12 +431,34 @@ class ContactForm {
     this.setLoading(true);
     
     try {
-      // Simulate form submission
-      await this.simulateSubmission();
-      this.showSuccess();
-      this.form.reset();
+      // Use the actual form action if available
+      const formAction = this.form.getAttribute('action');
+      
+      if (formAction && formAction.includes('formspree.io')) {
+        // Submit to Formspree
+        const formData = new FormData(this.form);
+        const response = await fetch(formAction, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        
+        if (response.ok) {
+          this.showSuccess();
+          this.form.reset();
+        } else {
+          throw new Error('Form submission failed');
+        }
+      } else {
+        // Fallback to simulation (for demo purposes)
+        await this.simulateSubmission();
+        this.showSuccess();
+        this.form.reset();
+      }
     } catch (error) {
-      this.showError('Une erreur est survenue. Veuillez réessayer.');
+      this.showError('An error occurred. Please try again.');
     } finally {
       this.setLoading(false);
     }
