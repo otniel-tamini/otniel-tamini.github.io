@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#06b6d4"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="32" fill="url(#g)"/>
+  <g transform="translate(40,36)" fill="#fff">
+    <circle cx="60" cy="50" r="36" opacity="0.95"/>
+    <rect x="18" y="98" width="84" height="36" rx="8"/>
+    <text x="60" y="66" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="36" text-anchor="middle" fill="#0f172a">OT</text>
+  </g>
+</svg>
