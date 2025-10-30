@@ -357,7 +357,7 @@ body {
   inset: 0; /* top:0; right:0; bottom:0; left:0 */
   width: 100%;
   height: 100%;
-  z-index: 1; /* behind hero__content (which has z-index:2) */
+  z-index: 0; /* sit behind architecture image and hero__content */
   opacity: 0.06;
   pointer-events: none;
   /* hidden by default when architecture image is available; shown as fallback */
@@ -371,13 +371,17 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.08;
+  /* make the architecture image clearly visible while keeping hero text readable */
+  opacity: 0.65;
+  filter: contrast(0.98) saturate(0.95);
   z-index: 1;
   pointer-events: none;
 }
 
-/* When architecture image exists (it's the previous sibling of .hero__content), hide the small animated visual */
-.hero__architecture + .hero__content .hero__visual {
+/* When architecture image exists, hide the hero visual (photo/tech-orbit).
+   Use the general sibling selector because a pipeline fallback element sits between
+   the image and the .hero__content in the DOM. */
+.hero__architecture ~ .hero__content .hero__visual {
   display: none;
 }
 
