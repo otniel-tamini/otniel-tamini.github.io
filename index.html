@@ -63,8 +63,11 @@
     </header>
 
     <section class="hero section" id="home">
-                <!-- pipeline animation restored as hero background -->
-                <div class="pipeline-animation hero-bg" aria-hidden="true">
+             <!-- architecture image (preferred) - fallback to pipeline animation if image fails -->
+             <img src="assets/Jenkins-aws-cicd.png" alt="Architecture diagram" class="hero__architecture" 
+                 onerror="this.style.display='none'; document.querySelector('.pipeline-animation').style.display='block'" />
+             <!-- pipeline animation restored as hero background -->
+             <div class="pipeline-animation hero-bg" aria-hidden="true">
                     <div class="pipeline-line"></div>
                     <div class="pipeline-nodes">
                         <div class="node active" data-stage="build">
